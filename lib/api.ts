@@ -1,5 +1,6 @@
 import axios from "axios";
 import type { Note, NewNote } from "@/types/note";
+export const TAGS = ["Todo", "Work", "Personal", "Meeting", "Shopping"] as const;export type Tag = (typeof TAGS)[number];
 const BASE_URL = "https://notehub-public.goit.study/api";
 const token = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN as string;
 
