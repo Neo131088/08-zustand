@@ -7,6 +7,7 @@ const token = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN as string;
 export interface FetchNoteParams {
   search?: string;
   page?: number;
+  perPage?: number;
   tag?: string;
 }
 
